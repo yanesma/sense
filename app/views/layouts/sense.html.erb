@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>tes</title>
+<!--CSS file (default YUI Sam Skin) -->
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/2.8.1/build/datatable/assets/skins/sam/datatable.css">
+
+<!-- Sam Skin CSS -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/container/assets/skins/sam/container.css">
+
+<!-- Dependencies -->
+<script src="http://yui.yahooapis.com/2.8.1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script src="http://yui.yahooapis.com/2.8.1/build/element/element-min.js"></script>
+<script src="http://yui.yahooapis.com/2.8.1/build/datasource/datasource-min.js"></script>
+
+<!-- OPTIONAL: JSON Utility (for DataSource) -->
+<script src="http://yui.yahooapis.com/2.8.1/build/json/json-min.js"></script>
+
+<!-- OPTIONAL: Connection Manager (enables XHR for DataSource) -->
+<script src="http://yui.yahooapis.com/2.8.1/build/connection/connection-min.js"></script>
+
+ 
+<!-- Source file -->
+<script src="http://yui.yahooapis.com/2.8.1/build/container/container-min.js"></script>
+
+
+<!-- OPTIONAL: Get Utility (enables dynamic script nodes for DataSource) -->
+<script src="http://yui.yahooapis.com/2.8.1/build/get/get-min.js"></script>
+
+
+<!-- Source files -->
+<script src="http://yui.yahooapis.com/2.8.1/build/datatable/datatable-min.js"></script>
+<%= stylesheet_link_tag 'scaffold' %>
+<!-- Source files <%= javascript_include_tag 'yui/table' %> -->
+<%= javascript_include_tag 'container' %>
+<%= javascript_include_tag 'container_core' %>
+
+<%= javascript_include_tag 'layout' %>
+<%= javascript_include_tag 'prototype' %>
+<%= javascript_include_tag 'button' %>
+
+<!-- <%= javascript_include_tag 'tes' %>
+<%= javascript_include_tag 'crud_table' %>  -->
+
+<!-- <%= javascript_include_tag 'tes' %> -->
+<%= javascript_include_tag 'simple_panel' %> 
+
+<style type="text/css">
+#container {background-color:#00CCFF; border:1px dotted black; padding:1em; cursor:pointer;}
+.modform {margin-bottom: 1em;} 
+.index {width:5em;} 
+</style>
+
+</head>
+
+
+<body class="yui-skin-sam">
+<%= yield %>
+
+<div id="container">
+  <p>Click for Hello World alert.</p>
+</div>
+
+
+<div id="input">
+<form>
+input text: <input type="text" id="input_text" /><br />
+<button id="yanes" type="button">gabgagsa </button>
+</form> 
+</div>
+<div>
+	<button id="show1">Show panel1</button> 
+	<button id="hide1">Hide panel1</button>
+</div>
+
+<div id="panel1">
+	<div class="hd">Panel #1 from Markup</div>
+	<div class="bd">This is a Panel that was marked up in the document.</div>
+	<div class="ft">End of Panel #1</div>
+</div>
+
+<div>
+	<button id="show2">Show panel2</button> 
+	<button id="hide2">Hide panel2</button>
+</div>
+
+</body>
+</html>

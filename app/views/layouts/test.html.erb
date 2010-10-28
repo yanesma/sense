@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Example: <%= controller.action_name %></title>
+
+<link rel="stylesheet" type="text/css" href="yui_2.7.0b-lib/container/assets/container-core.css" />
+<!--CSS file (default YUI Sam Skin) -->
+<link type="text/css" rel="stylesheet" href="http://yui.yahooapis.com/2.8.1/build/datatable/assets/skins/sam/datatable.css"/>
+<!-- Sam Skin CSS -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/container/assets/skins/sam/container.css"/>
+
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/logger/assets/logger.css"/>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/yuitest/assets/testlogger.css"/>
+
+<link rel="stylesheet" type="text/css"href="http://yui.yahooapis.com/2.8.1/build/reset-fonts-grids/reset-fonts-grids.css"/>
+<!-- Skin CSS files resize.css must load before layout.css -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/assets/skins/sam/resize.css"/>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/assets/skins/sam/layout.css"/>
+
+
+<!-- Dependency kaya -->
+
+<%= javascript_include_tag 'yui/yahoo-min.js' %>
+<%= javascript_include_tag 'yui/yahoo-dom-event' %>
+<script src="http://yui.yahooapis.com/2.8.1/build/logger/logger-min.js"></script>
+<%= javascript_include_tag 'yui/element-min' %>
+
+<%= javascript_include_tag 'yui/datasource-min' %>
+
+<%= javascript_include_tag 'yui/event-min' %>
+<%= javascript_include_tag 'yui/json-min' %>
+<%= javascript_include_tag 'yui/swf-min' %>
+
+<!-- Source files -->
+<%= javascript_include_tag 'yui/layout-min' %>
+<%= javascript_include_tag 'yui/charts-min' %>
+<%= javascript_include_tag 'yui/paginator-min' %>
+
+<script src="http://yui.yahooapis.com/2.8.1/build/yuitest/yuitest-min.js"></script>
+
+<%= javascript_include_tag 'yui/datatable' %>
+
+<%= javascript_include_tag 'container' %>
+
+<%= javascript_include_tag 'prototype' %>
+<%= javascript_include_tag 'button' %>
+
+<%= stylesheet_link_tag 'scaffold' %>
+<%= javascript_include_tag 'yui/sense_widget' %>
+<%= javascript_include_tag 'yui/test_api' %>
+<%= javascript_include_tag 'yui/unit-test' %>
+
+<style type="text/css">
+#container {background-color:#00CCFF; border:1px dotted black; padding:1em; cursor:pointer;}
+.modform {margin-bottom: 1em;}
+.index {width:5em;}
+
+.yui-skin-sam .yui-dt-liner { white-space:nowrap; }
+
+#chart
+	{
+		width: 400px;
+		height: 200px;
+
+		margin-left: 0.9em;
+	}
+
+#datatable
+{
+  margin-left: 0.9em;
+}
+	.yui-dt-table {width: 500px;}
+
+	.chart_title
+	{
+		display: block;
+		font-size: 1.2em;
+		font-weight: bold;
+
+		margin-bottom: 0.4em;
+	}
+
+</style>
+
+</head>
+<body class="yui-skin-sam">
+
+<div id="panel1"> </div>
+<button id="show1">Show panel1</button>
+<button id="hide1">Hide panel1</button>
+<span class="chart_title">Bi-Charts</span>
+
+</body>
+</html>
