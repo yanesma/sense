@@ -38,7 +38,7 @@ YAHOO.example.yuitest.SetPanelTestCase = new YAHOO.tool.TestCase({
     // Test methods - this is test for testing set title/name of a panel with a number
     //----------------------------------------------------------------------------------
     testSetPanelNameWithNumber : function () {
-       setPanelName(53);
+        setPanelName(53);
     }
 });
 
@@ -100,6 +100,12 @@ YAHOO.example.yuitest.PieChartTestCase = new YAHOO.tool.TestCase({
 
     name : "Pie Charts Tests",
 
+    _should: {
+        error: {
+            testPieChartColumnNotArray: true //this test should throw an error
+        }
+    },
+
     /*
      * Sets up data that is needed by each test.
      */
@@ -141,7 +147,7 @@ YAHOO.example.yuitest.PieChartTestCase = new YAHOO.tool.TestCase({
     //---------------------------------------------------------------------
 
     testPieChartColumnNotArray: function () {
-      setPieChart(sampleData,"profit");
+        setPieChart(sampleData,"profit");
     }
 });
 

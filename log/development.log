@@ -9748,3 +9748,31 @@ ActionController::RoutingError (No route matches "/yui_2.7.0b-lib/container/asse
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-10-28 12:02:31) [GET]
+Rendering template within layouts/test
+Rendering test/index
+Completed in 395ms (View: 391, DB: 0) | 200 OK [http://localhost/test]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-28 12:02:32) [GET]
+
+ActionController::RoutingError (No route matches "/yui_2.7.0b-lib/container/assets/container-core.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TestController#index (for 127.0.0.1 at 2010-10-28 12:28:49) [GET]
+Rendering template within layouts/test
+Rendering test/index
+Completed in 53ms (View: 35, DB: 0) | 200 OK [http://localhost/test]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-28 12:28:50) [GET]
+
+ActionController::RoutingError (No route matches "/yui_2.7.0b-lib/container/assets/container-core.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
